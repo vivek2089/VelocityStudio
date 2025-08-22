@@ -358,40 +358,49 @@
         }
 
         /* Privacy Policy */
-        .privacy-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
+        .privacy-hero {
+            background: linear-gradient(135deg, #2563eb, #0d9488);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .privacy-hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .privacy-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
 
         .privacy-section {
-            margin-bottom: 40px;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-bottom: 1px solid #e5e7eb;
         }
 
         .privacy-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--dark);
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--gray-light);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #1d4ed8;
         }
 
-        .privacy-section p {
-            margin-bottom: 15px;
-            color: var(--gray);
+        .privacy-section p, .privacy-section ul, .privacy-section li {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #374151;
         }
 
         .privacy-section ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            padding-left: 20px;
+            margin: 15px 0;
         }
 
         .privacy-section li {
-            margin-bottom: 8px;
-            color: var(--gray);
+            margin-bottom: 10px;
         }
 
         /* FAQ Section */
@@ -784,67 +793,91 @@
     </div>
 
     <!-- Privacy Policy Page -->
-    <div id="privacy" class="page-content">
-        <section class="app-showcase">
-            <div class="container">
-                <h2 class="section-title">Privacy Policy</h2>
-                <p class="section-subtitle">Last updated: September 2023</p>
-                
-                <div class="privacy-content">
-                    <div class="privacy-section">
-                        <h3>Introduction</h3>
-                        <p>At Velocity Studio, we take your privacy seriously. This Privacy Policy describes how we collect, use, and handle your information when you use our mobile applications.</p>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>Information We Collect</h3>
-                        <p>Our applications are designed to respect your privacy. Specifically for Meditime:</p>
-                        <ul>
-                            <li>Meditime stores your medication schedule and reminder settings locally on your device</li>
-                            <li>We do not collect any personal health information</li>
-                            <li>We do not require any account registration</li>
-                            <li>We do not track your usage through analytics platforms</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>How We Use Your Information</h3>
-                        <p>Since we do not collect any personal data, there is no usage of your information beyond the local functionality of the app:</p>
-                        <ul>
-                            <li>Meditime uses your device's local notification system to remind you to take medications</li>
-                            <li>All data remains on your device and is not transmitted to us or any third parties</li>
-                            <li>You can delete all your data at any time by uninstalling the application</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>Third-Party Services</h3>
-                        <p>Our applications may use the following third-party services:</p>
-                        <ul>
-                            <li><strong>Google Play Services</strong> (for Android apps) - For app distribution and updates</li>
-                            <li><strong>Apple App Store</strong> (for iOS apps) - For app distribution and updates</li>
-                            <li><strong>Notification services</strong> - Platform-specific notification systems to deliver reminders</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>Data Security</h3>
-                        <p>We implement appropriate technical measures to ensure the security of your data within our applications. Since all data is stored locally on your device, its security also depends on your device's security measures.</p>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>Changes to This Policy</h3>
-                        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
-                    </div>
-                    
-                    <div class="privacy-section">
-                        <h3>Contact Us</h3>
-                        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                        <p>Email: privacy@velocitystudio.in</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div id="privacy" class="page-content active">
+        <div class="privacy-hero">
+            <h2>Privacy Policy</h2>
+            <p>Last updated: August 22, 2025</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Introduction</h3>
+            <p>Velocity Studio ("we", "our", or "us") develops and publishes mobile applications under the domain velocitystudio.in. This Privacy Policy explains how we collect, use, and protect your information when you use our Apps.</p>
+            <p>This Privacy Policy applies to all current and future apps we release. Please note that not every app collects the same information — some work fully offline, while others may include optional online features.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Information We Collect</h3>
+            <p>Depending on the app and the features you use, we may collect:</p>
+            <ul>
+                <li><strong>Information You Provide:</strong> Account details (e.g., name, email) if you create an account; health or personal entries (like medication schedules) — stored locally unless you enable online sync or backup; caregiver or emergency contacts (if provided).</li>
+                <li><strong>Automatically Collected Information:</strong> Device type, operating system, usage statistics, crash reports, and analytics data. Location data only if you grant permission.</li>
+                <li><strong>Third-Party Services:</strong> Our apps may use services such as Firebase (Crashlytics, Analytics, Cloud Messaging), Google Play Services, Apple App Store, advertising networks, or cloud storage providers. These services have their own privacy policies.</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3>How We Use Information</h3>
+            <ul>
+                <li>Provide and improve app functionality</li>
+                <li>Send notifications, reminders, or alerts</li>
+                <li>Analyze crashes and performance</li>
+                <li>Support optional features such as cloud sync or caregiver sharing</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Information Sharing</h3>
+            <p>We do not sell your personal data. We may share information only when:</p>
+            <ul>
+                <li>You give explicit consent (e.g., sharing with caregivers)</li>
+                <li>We use service providers who help operate our apps (under confidentiality agreements)</li>
+                <li>Required by law or to protect safety</li>
+                <li>Business transfers (merger, acquisition, or sale of assets)</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Data Security</h3>
+            <p>We use reasonable security measures to protect your data. However, no method of transmission or storage is completely secure. For offline apps, all data remains on your device, and its security depends on your device settings.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Your Choices</h3>
+            <ul>
+                <li>Manage app permissions such as notifications, location, or contacts through device settings</li>
+                <li>Access, update, or delete information stored in the app</li>
+                <li>Request data deletion (if an account exists) by contacting us</li>
+                <li>Uninstall the app to delete all locally stored data</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Children's Privacy</h3>
+            <p>Our Apps are not directed at children under 13. We do not knowingly collect information from children. If such data is discovered, it will be deleted promptly.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3>International Users</h3>
+            <p>Your information may be processed outside your country. We ensure adequate protection in compliance with applicable laws.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Legal Compliance</h3>
+            <p>We comply with privacy laws such as GDPR, CCPA, and COPPA. Depending on your region, you may have rights to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request correction or deletion</li>
+                <li>Restrict or object to processing</li>
+                <li>Withdraw consent at any time</li>
+                <li>Request data portability</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Changes to This Policy</h3>
+            <p>We may update this Privacy Policy from time to time. Updates will be posted here with a new "Last updated" date. Continued use of our apps after changes means you accept the revised policy.</p>
+        </div>
     </div>
 
     <!-- Footer -->
