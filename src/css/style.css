@@ -23,16 +23,32 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.5rem; }
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
 
 p {
     margin-bottom: 1rem;
@@ -364,7 +380,8 @@ p {
 }
 
 /* Apps Section */
-.apps-section, .coming-soon-section {
+.apps-section,
+.coming-soon-section {
     padding: 80px 0;
 }
 
@@ -1098,7 +1115,8 @@ p {
     font-size: 1.3rem;
 }
 
-.legal-body p, .legal-body li {
+.legal-body p,
+.legal-body li {
     color: #666;
     margin-bottom: 1rem;
 }
@@ -1355,6 +1373,12 @@ p {
     font-size: 0.75rem;
 }
 
+
+/* LekhaJokha Preview in Hero */
+.lekhajokha-preview .app-icon {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
@@ -1403,11 +1427,11 @@ p {
         gap: 2rem;
     }
 
-    .hero-content > div:first-child {
+    .hero-content>div:first-child {
         order: 2;
     }
 
-    .hero-content > div:last-child {
+    .hero-content>div:last-child {
         order: 1;
     }
 
